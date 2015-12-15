@@ -1,0 +1,30 @@
+//
+//  DZMCityModel.h
+//  shopping
+//
+//  Created by haspay on 15/11/9.
+//  Copyright © 2015年 haspay. All rights reserved.
+//
+
+#import "DZMObject.h"
+@class DZMAreaModel;
+@interface DZMCityModel : DZMObject
+
+/**
+ *  区数组
+ */
+@property (nonatomic,strong) NSMutableArray *areaModelArray;
+
+/**
+ *  市名称
+ */
+@property (nonatomic,copy) NSString *b;
+
+/**
+ *  市ID
+ */
+@property (nonatomic,copy) NSString *c;
+
++ (instancetype)cityModelWithDict:(NSDictionary *)dict;
+- (instancetype)initWithDict:(NSDictionary *)dict;
+@end

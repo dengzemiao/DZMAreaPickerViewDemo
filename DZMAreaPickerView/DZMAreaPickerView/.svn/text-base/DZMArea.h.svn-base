@@ -1,0 +1,32 @@
+//
+//  DZMArea.h
+//  shopping
+//
+//  Created by haspay on 15/11/9.
+//  Copyright © 2015年 haspay. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "DZMProvinceModel.h"
+#import "DZMCityModel.h"
+#import "DZMAreaModel.h"
+
+@interface DZMArea : NSObject
+
+// 注释： DZMProvinceModel 省           DZMCityModel 市           DZMCityModel区
+
+/**
+ *  获得一个地址的模型数组 注意 ：获得是省数组 可以手动取出市数组 在取出区数组
+ *
+ *  @return 装好省市区的模型数组
+ */
++ (NSMutableArray *)areaModelArray;
+
+/**
+ *  更新地址数据
+ *
+ *  @param jsonStr jsonStr
+ *  @param update  是否需要更新 注意：初始化的时候需要传NO 以后从服务器获取新的地址字符串更新的时候可以传YES 避免了每次开启APP都要更换地址字符串
+ */
++ (void)areaUpdateWithJsonString:(NSString *)jsonStr update:(BOOL)update;
+@end

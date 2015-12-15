@@ -1,0 +1,120 @@
+//
+//  DZMArea.m
+//  shopping
+//
+//  Created by haspay on 15/11/9.
+//  Copyright © 2015年 haspay. All rights reserved.
+//
+
+#import "DZMArea.h"
+@interface DZMArea()
+
+@property (nonatomic,strong) NSMutableArray *areaModelArray;                // 地址模型数组
+@property (nonatomic,copy) NSString *filePath;                              // 本地地址json文件路径
+@end
+@implementation DZMArea
+
+- (NSMutableArray *)areaModelArray
+{
+    if (!_areaModelArray) {
+        
+        _areaModelArray = [NSMutableArray array];
+    }
+    return _areaModelArray;
+}
+
+
+/**
+ *  获得对象
+ *
+ *  @return DZMArea
+ */
++ (DZMArea *)area
+{
+    static DZMArea *area = nil;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        area = [[self alloc] init];
+    });
+    
+    return area;
+}
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        
+        
+    }
+    return self;
+}
+
+/**
+ *  初始化地址数据
+ */
+- (void)initAreaData
+{
+    // 从本地取出地址数据
+    NSString*filePath = [[NSBundle mainBundle] pathForResource:@"area"ofType:@"txt"];
+    NSString *areaStr = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    [DZMArea areaUpdateWithJsonString:areaStr update:NO];
+}
+
+/**
+ *  更新地址数据
+ *
+ *  @param jsonStr jsonStr
+ *  @param update  是否需要更新 注意：初始化的时候需要传NO 以后从服务器获取新的地址字符串更新的时候可以传YES 避免了每次开启APP都要更换地址字符串
+ */
++ (void)areaUpdateWithJsonString:(NSString *)jsonStr update:(BOOL)update
+{
+    DZMArea *area = [DZMArea area];
+    
+    // 获取沙河路径 进行缓存地址数据
+    NSString *searchPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"area.text"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    area.filePath = searchPath;
+
+    // 判断文件是否存在
+    if (![fileManager fileExistsAtPath:searchPath] || update) {   // 不存在创建 或者 进行更新
+    
+        [jsonStr writeToFile:searchPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+        
+    }
+    
+    [area updateAreaModelArray];
+}
+
+/**
+ *  更新地址模型数据
+ */
+- (void)updateAreaModelArray
+{
+    // 获取本地地址数组
+    NSString *areaStr = [[NSString alloc] initWithContentsOfFile:self.filePath encoding:NSUTF8StringEncoding error:nil];
+    // 解析
+    NSData *areaData = [[NSData alloc] initWithData:[areaStr dataUsingEncoding:NSUTF8StringEncoding]];
+    NSArray *areaArray = [NSJSONSerialization JSONObjectWithData:areaData options:NSJSONReadingMutableLeaves error:nil];
+    
+    for (NSDictionary *dict in areaArray)  {
+        
+        DZMProvinceModel *provinceModel = [DZMProvinceModel provinceModelWithDict:dict];
+        [self.areaModelArray addObject:provinceModel];
+    }
+    
+}
+
+/**
+ *  获得一个DZMArea的模型数组
+ *
+ *  @return 装好省市区的模型数组
+ */
++ (NSMutableArray *)areaModelArray
+{
+    DZMArea *area = [DZMArea area];
+
+    [area initAreaData];
+    
+    return area.areaModelArray;
+}
+@end

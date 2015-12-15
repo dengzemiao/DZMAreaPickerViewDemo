@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8C50D311BFAF275005FCC23 /* area.txt in Resources */ = {isa = PBXBuildFile; fileRef = F8C50D241BFAF275005FCC23 /* area.txt */; };
+		F8C50D321BFAF275005FCC23 /* DZMArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C50D261BFAF275005FCC23 /* DZMArea.m */; };
+		F8C50D331BFAF275005FCC23 /* DZMAreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C50D281BFAF275005FCC23 /* DZMAreaModel.m */; };
+		F8C50D341BFAF275005FCC23 /* DZMAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C50D2A1BFAF275005FCC23 /* DZMAreaPickerView.m */; };
+		F8C50D351BFAF275005FCC23 /* DZMCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C50D2C1BFAF275005FCC23 /* DZMCityModel.m */; };
+		F8C50D361BFAF275005FCC23 /* DZMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C50D2E1BFAF275005FCC23 /* DZMObject.m */; };
+		F8C50D371BFAF275005FCC23 /* DZMProvinceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C50D301BFAF275005FCC23 /* DZMProvinceModel.m */; };
+		F8E8D74D1BF094F000D4D04A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E8D74C1BF094F000D4D04A /* main.m */; };
+		F8E8D7501BF094F000D4D04A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E8D74F1BF094F000D4D04A /* AppDelegate.m */; };
+		F8E8D7531BF094F000D4D04A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E8D7521BF094F000D4D04A /* ViewController.m */; };
+		F8E8D7561BF094F000D4D04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E8D7541BF094F000D4D04A /* Main.storyboard */; };
+		F8E8D7581BF094F000D4D04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E8D7571BF094F000D4D04A /* Assets.xcassets */; };
+		F8E8D75B1BF094F000D4D04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E8D7591BF094F000D4D04A /* LaunchScreen.storyboard */; };
+		F8E8D7661BF094F000D4D04A /* DZMAreaPickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E8D7651BF094F000D4D04A /* DZMAreaPickerViewTests.m */; };
+		F8E8D7711BF094F000D4D04A /* DZMAreaPickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E8D7701BF094F000D4D04A /* DZMAreaPickerViewUITests.m */; };
+		F8E8D7921BF0A68F00D4D04A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E8D7521BF094F000D4D04A /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8E8D7621BF094F000D4D04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8E8D7401BF094F000D4D04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E8D7471BF094F000D4D04A;
+			remoteInfo = DZMAreaPickerView;
+		};
+		F8E8D76D1BF094F000D4D04A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8E8D7401BF094F000D4D04A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E8D7471BF094F000D4D04A;
+			remoteInfo = DZMAreaPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8C50D241BFAF275005FCC23 /* area.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = area.txt; sourceTree = "<group>"; };
+		F8C50D251BFAF275005FCC23 /* DZMArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMArea.h; sourceTree = "<group>"; };
+		F8C50D261BFAF275005FCC23 /* DZMArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMArea.m; sourceTree = "<group>"; };
+		F8C50D271BFAF275005FCC23 /* DZMAreaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMAreaModel.h; sourceTree = "<group>"; };
+		F8C50D281BFAF275005FCC23 /* DZMAreaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMAreaModel.m; sourceTree = "<group>"; };
+		F8C50D291BFAF275005FCC23 /* DZMAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMAreaPickerView.h; sourceTree = "<group>"; };
+		F8C50D2A1BFAF275005FCC23 /* DZMAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMAreaPickerView.m; sourceTree = "<group>"; };
+		F8C50D2B1BFAF275005FCC23 /* DZMCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMCityModel.h; sourceTree = "<group>"; };
+		F8C50D2C1BFAF275005FCC23 /* DZMCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMCityModel.m; sourceTree = "<group>"; };
+		F8C50D2D1BFAF275005FCC23 /* DZMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMObject.h; sourceTree = "<group>"; };
+		F8C50D2E1BFAF275005FCC23 /* DZMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMObject.m; sourceTree = "<group>"; };
+		F8C50D2F1BFAF275005FCC23 /* DZMProvinceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMProvinceModel.h; sourceTree = "<group>"; };
+		F8C50D301BFAF275005FCC23 /* DZMProvinceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMProvinceModel.m; sourceTree = "<group>"; };
+		F8E8D7481BF094F000D4D04A /* DZMAreaPickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZMAreaPickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E8D74C1BF094F000D4D04A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8E8D74E1BF094F000D4D04A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8E8D74F1BF094F000D4D04A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8E8D7511BF094F000D4D04A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F8E8D7521BF094F000D4D04A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8E8D7551BF094F000D4D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8E8D7571BF094F000D4D04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8E8D75A1BF094F000D4D04A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8E8D75C1BF094F000D4D04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E8D7611BF094F000D4D04A /* DZMAreaPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZMAreaPickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E8D7651BF094F000D4D04A /* DZMAreaPickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZMAreaPickerViewTests.m; sourceTree = "<group>"; };
+		F8E8D7671BF094F000D4D04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E8D76C1BF094F000D4D04A /* DZMAreaPickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZMAreaPickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E8D7701BF094F000D4D04A /* DZMAreaPickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZMAreaPickerViewUITests.m; sourceTree = "<group>"; };
+		F8E8D7721BF094F000D4D04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8E8D7451BF094F000D4D04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E8D75E1BF094F000D4D04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E8D7691BF094F000D4D04A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8C50D231BFAF275005FCC23 /* DZMAreaPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F8C50D241BFAF275005FCC23 /* area.txt */,
+				F8C50D251BFAF275005FCC23 /* DZMArea.h */,
+				F8C50D261BFAF275005FCC23 /* DZMArea.m */,
+				F8C50D271BFAF275005FCC23 /* DZMAreaModel.h */,
+				F8C50D281BFAF275005FCC23 /* DZMAreaModel.m */,
+				F8C50D291BFAF275005FCC23 /* DZMAreaPickerView.h */,
+				F8C50D2A1BFAF275005FCC23 /* DZMAreaPickerView.m */,
+				F8C50D2B1BFAF275005FCC23 /* DZMCityModel.h */,
+				F8C50D2C1BFAF275005FCC23 /* DZMCityModel.m */,
+				F8C50D2D1BFAF275005FCC23 /* DZMObject.h */,
+				F8C50D2E1BFAF275005FCC23 /* DZMObject.m */,
+				F8C50D2F1BFAF275005FCC23 /* DZMProvinceModel.h */,
+				F8C50D301BFAF275005FCC23 /* DZMProvinceModel.m */,
+			);
+			path = DZMAreaPickerView;
+			sourceTree = "<group>";
+		};
+		F8E8D73F1BF094F000D4D04A = {
+			isa = PBXGroup;
+			children = (
+				F8E8D74A1BF094F000D4D04A /* DZMAreaPickerView */,
+				F8E8D7641BF094F000D4D04A /* DZMAreaPickerViewTests */,
+				F8E8D76F1BF094F000D4D04A /* DZMAreaPickerViewUITests */,
+				F8E8D7491BF094F000D4D04A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8E8D7491BF094F000D4D04A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8E8D7481BF094F000D4D04A /* DZMAreaPickerView.app */,
+				F8E8D7611BF094F000D4D04A /* DZMAreaPickerViewTests.xctest */,
+				F8E8D76C1BF094F000D4D04A /* DZMAreaPickerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8E8D74A1BF094F000D4D04A /* DZMAreaPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				F8C50D231BFAF275005FCC23 /* DZMAreaPickerView */,
+				F8E8D74E1BF094F000D4D04A /* AppDelegate.h */,
+				F8E8D74F1BF094F000D4D04A /* AppDelegate.m */,
+				F8E8D7511BF094F000D4D04A /* ViewController.h */,
+				F8E8D7521BF094F000D4D04A /* ViewController.m */,
+				F8E8D7541BF094F000D4D04A /* Main.storyboard */,
+				F8E8D7571BF094F000D4D04A /* Assets.xcassets */,
+				F8E8D7591BF094F000D4D04A /* LaunchScreen.storyboard */,
+				F8E8D75C1BF094F000D4D04A /* Info.plist */,
+				F8E8D74B1BF094F000D4D04A /* Supporting Files */,
+			);
+			path = DZMAreaPickerView;
+			sourceTree = "<group>";
+		};
+		F8E8D74B1BF094F000D4D04A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E8D74C1BF094F000D4D04A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8E8D7641BF094F000D4D04A /* DZMAreaPickerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8E8D7651BF094F000D4D04A /* DZMAreaPickerViewTests.m */,
+				F8E8D7671BF094F000D4D04A /* Info.plist */,
+			);
+			path = DZMAreaPickerViewTests;
+			sourceTree = "<group>";
+		};
+		F8E8D76F1BF094F000D4D04A /* DZMAreaPickerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F8E8D7701BF094F000D4D04A /* DZMAreaPickerViewUITests.m */,
+				F8E8D7721BF094F000D4D04A /* Info.plist */,
+			);
+			path = DZMAreaPickerViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8E8D7471BF094F000D4D04A /* DZMAreaPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E8D7751BF094F000D4D04A /* Build configuration list for PBXNativeTarget "DZMAreaPickerView" */;
+			buildPhases = (
+				F8E8D7441BF094F000D4D04A /* Sources */,
+				F8E8D7451BF094F000D4D04A /* Frameworks */,
+				F8E8D7461BF094F000D4D04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DZMAreaPickerView;
+			productName = DZMAreaPickerView;
+			productReference = F8E8D7481BF094F000D4D04A /* DZMAreaPickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8E8D7601BF094F000D4D04A /* DZMAreaPickerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E8D7781BF094F000D4D04A /* Build configuration list for PBXNativeTarget "DZMAreaPickerViewTests" */;
+			buildPhases = (
+				F8E8D75D1BF094F000D4D04A /* Sources */,
+				F8E8D75E1BF094F000D4D04A /* Frameworks */,
+				F8E8D75F1BF094F000D4D04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8E8D7631BF094F000D4D04A /* PBXTargetDependency */,
+			);
+			name = DZMAreaPickerViewTests;
+			productName = DZMAreaPickerViewTests;
+			productReference = F8E8D7611BF094F000D4D04A /* DZMAreaPickerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F8E8D76B1BF094F000D4D04A /* DZMAreaPickerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E8D77B1BF094F000D4D04A /* Build configuration list for PBXNativeTarget "DZMAreaPickerViewUITests" */;
+			buildPhases = (
+				F8E8D7681BF094F000D4D04A /* Sources */,
+				F8E8D7691BF094F000D4D04A /* Frameworks */,
+				F8E8D76A1BF094F000D4D04A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8E8D76E1BF094F000D4D04A /* PBXTargetDependency */,
+			);
+			name = DZMAreaPickerViewUITests;
+			productName = DZMAreaPickerViewUITests;
+			productReference = F8E8D76C1BF094F000D4D04A /* DZMAreaPickerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E8D7401BF094F000D4D04A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = DZM;
+				TargetAttributes = {
+					F8E8D7471BF094F000D4D04A = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					F8E8D7601BF094F000D4D04A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F8E8D7471BF094F000D4D04A;
+					};
+					F8E8D76B1BF094F000D4D04A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = F8E8D7471BF094F000D4D04A;
+					};
+				};
+			};
+			buildConfigurationList = F8E8D7431BF094F000D4D04A /* Build configuration list for PBXProject "DZMAreaPickerView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8E8D73F1BF094F000D4D04A;
+			productRefGroup = F8E8D7491BF094F000D4D04A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8E8D7471BF094F000D4D04A /* DZMAreaPickerView */,
+				F8E8D7601BF094F000D4D04A /* DZMAreaPickerViewTests */,
+				F8E8D76B1BF094F000D4D04A /* DZMAreaPickerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8E8D7461BF094F000D4D04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E8D75B1BF094F000D4D04A /* LaunchScreen.storyboard in Resources */,
+				F8E8D7581BF094F000D4D04A /* Assets.xcassets in Resources */,
+				F8E8D7561BF094F000D4D04A /* Main.storyboard in Resources */,
+				F8C50D311BFAF275005FCC23 /* area.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E8D75F1BF094F000D4D04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E8D76A1BF094F000D4D04A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8E8D7441BF094F000D4D04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C50D361BFAF275005FCC23 /* DZMObject.m in Sources */,
+				F8C50D321BFAF275005FCC23 /* DZMArea.m in Sources */,
+				F8C50D351BFAF275005FCC23 /* DZMCityModel.m in Sources */,
+				F8C50D371BFAF275005FCC23 /* DZMProvinceModel.m in Sources */,
+				F8E8D7531BF094F000D4D04A /* ViewController.m in Sources */,
+				F8E8D7501BF094F000D4D04A /* AppDelegate.m in Sources */,
+				F8C50D341BFAF275005FCC23 /* DZMAreaPickerView.m in Sources */,
+				F8E8D74D1BF094F000D4D04A /* main.m in Sources */,
+				F8C50D331BFAF275005FCC23 /* DZMAreaModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E8D75D1BF094F000D4D04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E8D7921BF0A68F00D4D04A /* ViewController.m in Sources */,
+				F8E8D7661BF094F000D4D04A /* DZMAreaPickerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E8D7681BF094F000D4D04A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E8D7711BF094F000D4D04A /* DZMAreaPickerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8E8D7631BF094F000D4D04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E8D7471BF094F000D4D04A /* DZMAreaPickerView */;
+			targetProxy = F8E8D7621BF094F000D4D04A /* PBXContainerItemProxy */;
+		};
+		F8E8D76E1BF094F000D4D04A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8E8D7471BF094F000D4D04A /* DZMAreaPickerView */;
+			targetProxy = F8E8D76D1BF094F000D4D04A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8E8D7541BF094F000D4D04A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E8D7551BF094F000D4D04A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8E8D7591BF094F000D4D04A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E8D75A1BF094F000D4D04A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8E8D7731BF094F000D4D04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c697ca0e-a4cf-4013-8555-0279eaaf3ae4";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8E8D7741BF094F000D4D04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "c697ca0e-a4cf-4013-8555-0279eaaf3ae4";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8E8D7761BF094F000D4D04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DZMAreaPickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haspay.shopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8E8D7771BF094F000D4D04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DZMAreaPickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haspay.shopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F8E8D7791BF094F000D4D04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DZMAreaPickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DZM.DZMAreaPickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DZMAreaPickerView.app/DZMAreaPickerView";
+			};
+			name = Debug;
+		};
+		F8E8D77A1BF094F000D4D04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DZMAreaPickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DZM.DZMAreaPickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DZMAreaPickerView.app/DZMAreaPickerView";
+			};
+			name = Release;
+		};
+		F8E8D77C1BF094F000D4D04A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DZMAreaPickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DZM.DZMAreaPickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DZMAreaPickerView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F8E8D77D1BF094F000D4D04A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DZMAreaPickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DZM.DZMAreaPickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DZMAreaPickerView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8E8D7431BF094F000D4D04A /* Build configuration list for PBXProject "DZMAreaPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E8D7731BF094F000D4D04A /* Debug */,
+				F8E8D7741BF094F000D4D04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E8D7751BF094F000D4D04A /* Build configuration list for PBXNativeTarget "DZMAreaPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E8D7761BF094F000D4D04A /* Debug */,
+				F8E8D7771BF094F000D4D04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E8D7781BF094F000D4D04A /* Build configuration list for PBXNativeTarget "DZMAreaPickerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E8D7791BF094F000D4D04A /* Debug */,
+				F8E8D77A1BF094F000D4D04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E8D77B1BF094F000D4D04A /* Build configuration list for PBXNativeTarget "DZMAreaPickerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E8D77C1BF094F000D4D04A /* Debug */,
+				F8E8D77D1BF094F000D4D04A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E8D7401BF094F000D4D04A /* Project object */;
+}

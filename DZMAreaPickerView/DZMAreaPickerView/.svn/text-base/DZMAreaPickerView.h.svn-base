@@ -1,0 +1,39 @@
+//
+//  DZMAreaPickerView.h
+//  shopping
+//
+//  Created by haspay on 15/11/9.
+//  Copyright © 2015年 haspay. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "DZMArea.h"
+@class DZMAreaPickerView;
+@protocol DZMAreaPickerViewDelegate <NSObject>
+
+/**
+ *  滚动选中之后代理回调传出模型
+ *
+ *  @param areaPickerView       DZMAreaPickerView
+ *  @param currentProvinceModel 当前选中的省模型
+ *  @param currentCityModel     当前选中的市模型
+ *  @param currentAreaModel     当前选中的区模型
+ */
+- (void)areaPickerView:(DZMAreaPickerView *)areaPickerView currentProvinceModel:(DZMProvinceModel *)currentProvinceModel currentCityModel:(DZMCityModel *)currentCityModel currentAreaModel:(DZMAreaModel *)currentAreaModel;
+
+@end
+@interface DZMAreaPickerView : UIPickerView
+
+/**
+*  返回显示好地址的areaPickerView
+*
+*  @param aDelegate aDelegate
+*
+*  @return areaPickerView
+*/
++ (DZMAreaPickerView *)areaPickerViewWithaDelegate:(id<DZMAreaPickerViewDelegate>)aDelegate;
+
+
+@property (nonatomic,weak) id<DZMAreaPickerViewDelegate> aDelegate;
+
+@end
