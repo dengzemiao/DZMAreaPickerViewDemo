@@ -17,28 +17,40 @@
     [super viewDidLoad];
     
     // 创建即可用（自定选中加代理回调）
-    DZMAreaPickerView *areaPickerView = [DZMAreaPickerView areaPickerViewWithaDelegate:self];
+    DZMAreaPickerView *areaPickerView = [DZMAreaPickerView areaPickerViewWithaDelegate:self openDelegate:NO];
     areaPickerView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 320);
     [self.view addSubview: areaPickerView];
     
+    /*
+     2016-01-08 13:43:47.779 DZMAreaPickerView[17527:194253] name - 北京市     北京市     顺义区
+     2016-01-08 13:43:47.779 DZMAreaPickerView[17527:194253] id   - 1     1001     10012
+     2016-01-08 13:43:51.456 DZMAreaPickerView[17527:194253] name - 天津市     天津市     东丽区
+     2016-01-08 13:43:51.457 DZMAreaPickerView[17527:194253] id   - 2     1002     10028
+     2016-01-08 13:43:53.506 DZMAreaPickerView[17527:194253] name - 广东省     广州市     芳村区
+     2016-01-08 13:43:53.506 DZMAreaPickerView[17527:194253] id   - 19     1197     11752
+     */
+    
+//    [areaPickerView selectProvinceID:@"19" cityID:@"1197" areaID:@"11752"];
+    
+//    [areaPickerView selectAreaID:@"11752"];
     
     #pragma mark - 附加功能(可看需求用)
     // 可以通过服务器传回来的ID 传入进去直接进行选中对应的省市区 （建议进去看该方法介绍）传nil默认位置为0注意
     // 该方法只能用于对应ID 选中 普通选中DZMAreaPickerView以自带选中加代理回调
-    [areaPickerView selectProvinceID:nil cityID:nil areaID:nil];
-    
-    // 服务器请求回来的城市ID 可直接传进去初始化 可以进去看下该方法的介绍
-    [DZMArea provinceID:nil cityID:nil areaID:nil];
-    
-    // 初始化之后可以获得 (同过ID 初始化之后得到 的省市区名称数组)
-    NSMutableArray *areaNameArray = [DZMArea areaNameArray];
-    
-    // 初始化之后可以获得 (同过ID 初始化之后得到 的省市区索引数组，可用于选中pickview)
-    NSMutableArray *areaIndexArray = [DZMArea areaIndexArray];
-    
-    // 初始化之后可以获得 (同过ID 初始化之后得到 的省市区名称字符串) 在通过ID拼接好的地址字符串后面更上一段详细地址(不用可传nil) 例如：拼接的是  上海市 + suffix, 传nil则获得通过ID拼接的地址字符串
-    // (注意：重复的省市名称将缩短成一个 例如：上海市 上海市 浦东新区 = 上海市浦东新区,重庆市 重庆市 ... = 重庆市... )
-    NSString *areaString = [DZMArea areaStringWithSuffix:nil];
+//    [areaPickerView selectProvinceID:nil cityID:nil areaID:nil];
+//    
+//    // 服务器请求回来的城市ID 可直接传进去初始化 可以进去看下该方法的介绍
+//    [DZMArea provinceID:nil cityID:nil areaID:nil];
+//    
+//    // 初始化之后可以获得 (同过ID 初始化之后得到 的省市区名称数组)
+//    NSMutableArray *areaNameArray = [DZMArea areaNameArray];
+//    
+//    // 初始化之后可以获得 (同过ID 初始化之后得到 的省市区索引数组，可用于选中pickview)
+//    NSMutableArray *areaIndexArray = [DZMArea areaIndexArray];
+//    
+//    // 初始化之后可以获得 (同过ID 初始化之后得到 的省市区名称字符串) 在通过ID拼接好的地址字符串后面更上一段详细地址(不用可传nil) 例如：拼接的是  上海市 + suffix, 传nil则获得通过ID拼接的地址字符串
+//    // (注意：重复的省市名称将缩短成一个 例如：上海市 上海市 浦东新区 = 上海市浦东新区,重庆市 重庆市 ... = 重庆市... )
+//    NSString *areaString = [DZMArea areaStringWithSuffix:nil];
 }
 
 

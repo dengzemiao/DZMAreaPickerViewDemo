@@ -45,6 +45,15 @@ typedef enum{
 + (NSDictionary *)provinceID:(NSString *)provinceID cityID:(NSString *)cityID areaID:(NSString *)areaID;
 
 /**
+ *  通过区ID 获取省市区
+ *
+ *  @param areaID 区ID
+ *
+ *  @return DZMAreaModel 模型里面附带省市区信息
+ */
++ (DZMAreaModel *)areaID:(NSString *)areaID;
+
+/**
  *  获取通过 + (NSDictionary *)provinceID 方法传入ID初始化过得省市区名称数组
  *
  *  @return 省市区名称数组 (存在里面属性为字符串类型)

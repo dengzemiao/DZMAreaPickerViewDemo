@@ -9,12 +9,15 @@
 #import "DZMAreaModel.h"
 
 @implementation DZMAreaModel
-- (instancetype)initWithDict:(NSDictionary *)dict
+- (instancetype)initWithDict:(NSDictionary *)dict ProvinceB:(NSString *)ProvinceB ProvinceC:(NSNumber *)ProvinceC CityB:(NSString *)CityB CityC:(NSNumber *)CityC
 {
     if (self = [super init]) {
         
         if (dict != nil) {
-            
+            self.ProvinceB = ProvinceB;
+            self.ProvinceC = ProvinceC;
+            self.CityB = CityB;
+            self.CityC = CityC;
             [self setValuesForKeysWithDictionary:dict];
         }
         
@@ -22,9 +25,9 @@
     return self;
 }
 
-+ (instancetype)areaModelWithDict:(NSDictionary *)dict
++ (instancetype)areaModelWithDict:(NSDictionary *)dict ProvinceB:(NSString *)ProvinceB ProvinceC:(NSNumber *)ProvinceC CityB:(NSString *)CityB CityC:(NSNumber *)CityC
 {
-    return [[DZMAreaModel alloc] initWithDict:dict];
+    return [[DZMAreaModel alloc] initWithDict:dict ProvinceB:ProvinceB ProvinceC:ProvinceC CityB:CityB CityC:CityC];
 }
 
 

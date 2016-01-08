@@ -11,6 +11,26 @@
 @interface DZMAreaModel : DZMObject
 
 /**
+ *  省名称
+ */
+@property (nonatomic,copy) NSString *ProvinceB;
+
+/**
+ *  省ID
+ */
+@property (nonatomic,copy) NSNumber *ProvinceC;
+
+/**
+ *  市名称
+ */
+@property (nonatomic,copy) NSString *CityB;
+
+/**
+ *  市ID
+ */
+@property (nonatomic,copy) NSNumber *CityC;
+
+/**
  *  区名称
  */
 @property (nonatomic,copy) NSString *b;
@@ -20,7 +40,7 @@
  */
 @property (nonatomic,copy) NSNumber *c;
 
-+ (instancetype)areaModelWithDict:(NSDictionary *)dict;
-- (instancetype)initWithDict:(NSDictionary *)dict;
++ (instancetype)areaModelWithDict:(NSDictionary *)dict ProvinceB:(NSString *)ProvinceB ProvinceC:(NSNumber *)ProvinceC CityB:(NSString *)CityB CityC:(NSNumber *)CityC;
+- (instancetype)initWithDict:(NSDictionary *)dict ProvinceB:(NSString *)ProvinceB ProvinceC:(NSNumber *)ProvinceC CityB:(NSString *)CityB CityC:(NSNumber *)CityC;
 
 @end

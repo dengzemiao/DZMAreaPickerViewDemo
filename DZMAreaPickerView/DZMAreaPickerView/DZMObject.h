@@ -15,6 +15,8 @@
 
 // 标示
 #define DZM_A @"a"
+#define DZM_B @"b"
+#define DZM_C @"c"
 
 #import <Foundation/Foundation.h>
 

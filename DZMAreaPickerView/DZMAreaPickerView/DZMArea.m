@@ -15,8 +15,21 @@
 @property (nonatomic,strong) NSMutableArray *areaNameArr;                   // 地址名称数组
 @property (nonatomic,strong) NSMutableArray *areaIndexArr;                  // 地址索引数组
 @property (nonatomic,copy) NSString *areaStr;                               // 地址拼接好的字符串
+/**
+ *  全部的区 字典 数组 @{key(ID做key) : value(areaModel),...}
+ */
+@property (nonatomic,strong) NSMutableDictionary *allAreaModelDict;
 @end
 @implementation DZMArea
+
+- (NSMutableDictionary *)allAreaModelDict
+{
+    if (!_allAreaModelDict) {
+        
+        _allAreaModelDict = [NSMutableDictionary dictionary];
+    }
+    return _allAreaModelDict;
+}
 
 - (NSMutableArray *)areaIndexArr
 {
@@ -128,12 +141,17 @@
     NSData *areaData = [[NSData alloc] initWithData:[areaStr dataUsingEncoding:NSUTF8StringEncoding]];
     NSArray *areaArray = [NSJSONSerialization JSONObjectWithData:areaData options:NSJSONReadingMutableLeaves error:nil];
     
+    NSMutableArray *areaModelArray = [NSMutableArray array];
+    NSMutableDictionary *allAreaModelDict = [NSMutableDictionary dictionary];
+    
     for (NSDictionary *dict in areaArray)  {
         
         DZMProvinceModel *provinceModel = [DZMProvinceModel provinceModelWithDict:dict];
-        [self.areaModelArray addObject:provinceModel];
+        [areaModelArray addObject:provinceModel];
+        [allAreaModelDict addEntriesFromDictionary:provinceModel.allAreaModelDict];
     }
-    
+    self.areaModelArray = areaModelArray;
+    self.allAreaModelDict = allAreaModelDict;
 }
 /**  (获取名称跟索引的单利初始化方法)
  *  通过省市区ID获得省市区顺序的名称和索引字典数组(注意 必须是同一个省市区范围的才有值 例如：区必须是市的子集市必须市省的子集，或者只想要省市不要区 区可以传nil，只想要省不要市区 同样 nil或者@""表示不获取该字段)
@@ -196,10 +214,26 @@
     }
     area.areaStr = tempName;
     
-    
     area.areaDict = @{DZMAreaName:area.areaNameArr,DZMAreaIndex:area.areaIndexArr};
     
     return area.areaDict;
+}
+
+/**
+ *  通过区ID 获取省市区
+ *
+ *  @param areaID 区ID
+ *
+ *  @return DZMAreaModel 模型里面附带省市区信息
+ */
++ (DZMAreaModel *)areaID:(NSString *)areaID
+{
+    DZMArea *area = [DZMArea area];
+    [area initAreaData];
+    
+    DZMAreaModel *areaModel = area.allAreaModelDict[areaID];
+    
+    return areaModel;
 }
 
 /**
@@ -240,6 +274,7 @@
             break;
         }
     }
+    
     
     if (dict.count == 0) {
         

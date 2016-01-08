@@ -10,6 +10,12 @@
 @class DZMCityModel;
 @interface DZMProvinceModel : DZMObject
 
+
+/**
+ *  当前省所有的区 字典 @{key(ID做key) : value(areaModel),...}
+ */
+@property (nonatomic,strong) NSMutableDictionary *allAreaModelDict;
+
 /**
  *  市数组
  */

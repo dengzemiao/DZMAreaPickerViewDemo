@@ -15,9 +15,23 @@
         
         if (dict != nil) {
             
-            [self setValuesForKeysWithDictionary:dict];
+            self.b = dict[DZM_B];
+            self.c = dict[DZM_C];
+            
+            NSArray *a = dict[DZM_A];
+            if (a.count > 0) {
+                NSMutableDictionary *allAreaModelDict = [NSMutableDictionary dictionary];
+                NSMutableArray *cityModelArr = [NSMutableArray array];
+                
+                for (NSDictionary *dict in a) {
+                    DZMCityModel *cityModel = [DZMCityModel cityModelWithDict:dict ProvinceB:self.b ProvinceC:self.c];
+                    [cityModelArr addObject:cityModel];
+                    [allAreaModelDict addEntriesFromDictionary:cityModel.allAreaModelDict];
+                }
+                self.cityModelArray = cityModelArr;
+                self.allAreaModelDict = allAreaModelDict;
+            }
         }
-        
     }
     return self;
 }
@@ -26,25 +40,4 @@
 {
     return [[DZMProvinceModel alloc] initWithDict:dict];
 }
-
-- (void)setValue:(id)value forUndefinedKey:(NSString *)key
-{
-    if ([key isEqualToString:DZM_A]) { // 数组
-        
-        NSMutableArray *cityModelArr = [NSMutableArray array];
-        
-        for (NSDictionary *dict in value) {
-            
-            DZMCityModel *cityModel = [DZMCityModel cityModelWithDict:dict];
-            [cityModelArr addObject:cityModel];
-        }
-        
-        self.cityModelArray = cityModelArr;
-        
-    }else{
-        
-        DZMLog(@"文件名称 = DZMProvinceModel   value = %@  key = %@",value,key);
-    }
-}
-
 @end
